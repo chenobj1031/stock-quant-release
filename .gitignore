@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 运行时数据（缓存 + SQLite 信号库）— 不入 git，本地生成
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/*.png
+data/*.csv
+data/*.json
+data/cache/
+
+# 运行时文件（P2-5, 2026-09-22体检）：fetch_pickle 缓存数千个 .cache 文件
+# 混入版本控制（git status 大量 D 的根因），一并忽略
+data/*.cache
+data/*.cache.tmp
+data/.sim.lock
+logs/*.log
+
+# 池模板保留入库（data/*.json 的例外）
+!data/pool.example.json
+
+# 报告产物 / 预案文件（本地生成，不入库）
+复盘/
+plans/

@@ -1,0 +1,10 @@
+{
+  "pool": [
+    {"name": "贵州茅台", "code": "sh600519", "role": "mainline"},
+    {"name": "招商银行", "code": "sh600036", "role": "mainline"},
+    {"name": "宁德时代", "code": "sz300750", "role": "watch"},
+    {"name": "长江电力", "code": "sh600900", "role": "watch"},
+    {"name": "银行ETF", "code": "sh512800", "role": "etf"}
+  ],
+  "_说明": "复制本文件为 data/pool.json 并替换为自己的自选池。name=股票名称，code=带交易所前缀的代码(sh/sz+6位)，role=角色(mainline=主线核心/watch=观察/etf=ETF)。增删股票只改这一处，名称解析、盘前预案、报告注入全部自动跟随。本文件（.example）仅作模板，不会被系统读取。"
+}
